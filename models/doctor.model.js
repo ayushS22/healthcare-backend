@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');// importing mongoose to define schema and model
 
 module.exports = mongoose.model('Doctor', {
   name: String,

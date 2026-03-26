@@ -38,7 +38,7 @@ exports.updateDoctor = async (req, res) => {
     const doctor = await Doctor.findByIdAndUpdate(
       req.params.id,
       req.body,
-      { new: true }
+      { new: true }//tells Mongoose to return the updated document, not the old one.
     );
 
     res.json(doctor);

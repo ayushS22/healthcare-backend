@@ -27,3 +27,20 @@ exports.login = async (req, res) => {
 
   res.json({ token });
 };
+
+
+
+//The 10 is called:
+
+// Salt Rounds (Cost Factor)
+
+// Simple meaning
+
+// It tells bcrypt how many times to process (hash) the password
+
+// Higher number → more secure 
+// Higher number → slower 
+// Example
+// 10 → good balance (secure + fast) 
+// 5 → faster but less secure 
+// 12+ → more secure but slower
